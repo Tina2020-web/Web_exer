@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="card.css" />
+    <title>Day 1 Expanding Cards</title>
+  </head>
+  <body>
+    <div>
+      <h4>第一节 动态卡片 互动式添加或者移除动画class</h4>
+      <p>
+        <li>
+          Javascript用onclick mouse来添加class， panels.forEach((i) =>
+          {i.addEventListener("click", () => {i.classList.add("active");}); });
+          或者移除i.classList.remove("active");
+        </li>
+        <li>querySelectorAll来选择所有的元素</li>
+        <li>在css中设置渐变，transition: opacity 0.3s ease-in 0.4s;</li>
+      </p>
+    </div>
+
+    <div class="container">
+      <div
+        class="panel"
+        style="background-image: url('https://source.unsplash.com/lQGJCMY5qcM')"
+      >
+        <h3>Glassware</h3>
+      </div>
+      <div
+        class="panel"
+        style="background-image: url('https://source.unsplash.com/RflgrtzU3Cw')"
+      >
+        <h3>Molecule</h3>
+      </div>
+      <div
+        class="panel"
+        style="background-image: url('https://source.unsplash.com/_whop2XD0Mk')"
+      >
+        <h3>Reaction</h3>
+      </div>
+      <div
+        class="panel"
+        style="background-image: url('https://source.unsplash.com/pwcKF7L4-no')"
+      >
+        <h3>PCR</h3>
+      </div>
+      <div
+        class="panel"
+        style="background-image: url('https://source.unsplash.com/OgvqXGL7XO4')"
+      >
+        <h3>Cell</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
